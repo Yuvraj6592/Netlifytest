@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.options {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* plus sign */
+
+.sign {
+  width: 100%;
+
+  transition-duration: 0.3s;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: var(--night-rider);
+}
+
+.add-icon svg,
+.delete-icon svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.add-icon:hover svg {
+  transform: scale(1.2);
+}
+
+.delete-icon:hover svg {
+  transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.inputheight {
+  border-radius: 0.3rem;
+  font-size: 1px;
+  padding: 0 2px;
+  height: 32px;
+}
+
+.expenseForm {
+  scrollbar-width: "thin";
+  width: "100%";
+  height: "80%";
+  scrollbar-color: " #6969dd";
+  scrollbar-gutter: " stable";
+}
+
+.tableContainer {
+  margin-top: 5;
+  border-top: "1px solid lightgrey";
+  max-height: "100%";
+  scrollbar-width: "thin";
+  overflow: "auto";
+  width: "100%";
+}
+
+.expenseFormContainer {
+  width: "100%";
+  height: "100%";
+  scrollbar-width: "thin";
+  display: "flex";
+  flex-direction: "column";
+}
+
+.dataGrid {
+  height: 100vh;
+  border-left: 0;
+  border-right: 0;
+}
+
+.box {
+  width: "100%";
+
+  height: "100%";
+}
+
+.flex_between {
+  display: "flex";
+  width: "fit-content";
+  flex-wrap: "nowrap";
+  justify-content: "space-between";
+  align-items: "center";
+}
+.flex_around {
+  display: "flex";
+  flex-wrap: "nowrap";
+  justify-content: "space-around";
+  align-items: "center";
+}
